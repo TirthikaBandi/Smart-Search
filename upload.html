@@ -14,54 +14,87 @@
       #navbarSupportedContent{
       font-size: 12px;
       }
+
+      a{
+        text-decoration: none;
+        color: black;
+      }
+
+      a:hover{
+        color: black;
+      }
+
+      .nav-link{
+        font-size: 18px;
+      }
     </style>
     <link rel="stylesheet" src="upload.css">
   </head>
   <body>
     <!--navbar-->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Smart Search</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav justify-content-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="search.html">SEARCH</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="upload.html">UPLOAD</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT</a>
-            </li>
-            <li class="nav-item dropdown" class="nav justify-content-end">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                SIGN IN AS
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">username</a>
-                <a class="dropdown-item" href="#">Profile</a>
-                <a class="dropdown-item" href="#">Sign out</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 pr-5 py-4">
+              <a class="navbar-brand" href="#"><label class="display-4">Smart Search</label></a>
+            </div>
+
+
+        <div class="col-md-4 col-sm-12  py-4">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                  <ul class="nav">
+                    <li class="nav-item mx-2 py-4 active">
+                      <a class="nav-link " href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-2 py-4">
+                      <a class="nav-link " href="search.html">SEARCH</a>
+                    </li>
+                    <li class="nav-item mx-2 py-4">
+                      <a class="nav-link" href="upload.html">UPLOAD</a>
+                    </li>
+                    <li class="nav-item mx-2 py-4">
+                      <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+
+            </div>
+            <div class="col-md-4 col-sm-12 py-5 ">
+              <ul class="nav ml-5 pl-5 py-2">
+              <li class="nav-item dropdown ml-5 pl-5" class="nav justify-content-end">
+                      <a class="nav-link dropdown-toggle pl-5 ml-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        SIGN IN AS
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">username</a>
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Sign out</a>
+                    </li>
+                </div>
+              </li>
+            </div>
+        </div>      
+    </div>
 
     <!--upload function-->
-    <form>
-        <div class="form-group">
-          <label for="exampleFormControlFile1">Upload Here!</label>
-          <input class="form-control" type="text" placeholder="Enter the title">
-          <input type="file" class="form-control-file" id="exampleFormControlFile1">
-          <button type="submit" class="btn btn-primary mb-2">Upload</button>
-        </div>
-      </form>
+    <div class="row  mx-5">
+      <div class="col-md-3 col-sm-12"></div>
+      <div class="col-md-6 col-sm-12 bg-light py-5 pl-5 mt-5">
+          <div class="row"><label class="pt-5  pl-5"><h5>Upload here!</h5></label></div>
+          <div class="row pt-5 pl-5">
+              <input type="text" class="mx-3" placeholder="Enter the title">
+              <input type="file" class="py-2 " id="exampleFormControlFile1">
+              <button type="submit" class="btn btn-success mb-2">Upload</button>  
+          </div>
+      </div>
+      <div class="col-md-3 col-sm-12"></div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
